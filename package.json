@@ -17,6 +17,13 @@
   "dependencies": {
     "gatsby": "^4.0.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "typeface-inter": "^3.18.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "gatsby-plugin-postcss": "^5.0.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.17"
   }
 }
