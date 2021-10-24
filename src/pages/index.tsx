@@ -19,7 +19,7 @@ const IndexPage = (props: PageProps) => {
       />
       
 
-      <div className="max-w-screen-md mx-auto my-0 pt-24 pb-0 px-8 ">
+      <div className="max-w-screen-md mx-auto my-0 pt-24 pb-0 px-8 animate-fade-in-up">
         <img src={logo} height={126} width={400}  alt="Logo" />
         <div className="pt-16 pb-4">
           <h1 className=" text-fg-pf text-4xl font-extrabold ">
