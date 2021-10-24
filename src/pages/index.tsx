@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 // markup
 const IndexPage = (props: PageProps) => {
   return (
-    <main className="font-inter font-light h-screen bg-bg-pf text-fg-pf">
+    <main className="font-light h-screen bg-bg-pf text-fg-pf">
       <Helmet title="Aymen Hamza" defer={false}
        link={[
       { rel: 'icon', type: 'image/png', href:favicon }
@@ -22,7 +22,7 @@ const IndexPage = (props: PageProps) => {
       <div className="max-w-screen-md mx-auto my-0 pt-24 pb-0 px-8 ">
         <img src={logo} height={126} width={400}  alt="Logo" />
         <div className="pt-16 pb-4">
-          <h1 className="font-extrabold text-fg-pf text-4xl">
+          <h1 className=" text-fg-pf text-4xl font-extrabold ">
             I’m Aymen Hamza,a Software engineer .
           </h1>
           <p className="pt-9 text-2xl">

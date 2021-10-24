@@ -3,9 +3,6 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      fontFamily: {
-        inter: ["inter", "sans-serif"],
-      },
       colors: {
         "bg-pf": "#101010",
         "fg-pf": "#FFFFFF",
