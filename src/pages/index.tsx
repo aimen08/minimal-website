@@ -6,20 +6,41 @@ import logo from "../images/logo.png";
 import favicon from "../images/favicon.png"
 import {BsGithub,BsLinkedin} from "react-icons/bs"
 import { Helmet } from "react-helmet"
+import Particles from 'react-particles-js';
+
 
 // styles
 // markup
 const IndexPage = (props: PageProps) => {
   return (
-    <main className="font-light h-screen bg-bg-pf text-fg-pf">
+    <main className="font-light overflow-hidden text-fg-pf">
       <Helmet title="Aymen Hamza" defer={false}
        link={[
       { rel: 'icon', type: 'image/png', href:favicon }
   ]}
       />
-      
+        <Particles 
+        className="h-screen"
+        params={{
+           "particles": {
+	        "number": {
+	            "value": 50
+	        },
+	        "size": {
+	            "value": 3
+	        }
+	    },
+	    "interactivity": {
+	        "events": {
+	            "onhover": {
+	                "enable": true,
+	                "mode": "repulse"
+	            }
+	        }
+	    }
+        }}/>
 
-      <div className="max-w-screen-md mx-auto my-0 pt-24 pb-0 px-8 animate-fade-in-up">
+      <div className="max-w-screen-md mx-auto my-0 pt-24 pb-0 px-8 animate-fade-in-up absolute inset-0 overflow-y-auto">
         <img src={logo} height={126} width={400}  alt="Logo" />
         <div className="pt-16 pb-4">
           <h1 className=" text-fg-pf text-4xl font-extrabold ">
