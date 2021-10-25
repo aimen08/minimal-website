@@ -1,4 +1,5 @@
-import * as React from "react";
+import React,{useState
+} from "react";
 import { Page, PageProps } from "gatsby";
 //@ts-ignore
 import logo from "../images/logo.png";
@@ -16,9 +17,13 @@ import forth from "../images/4.png";
 import fifth from "../images/5.png";
 import sixth from "../images/6.png";
 
+
+
 // styles
 // markup
 const IndexPage = (props: PageProps) => {
+
+
   return (
     <main className="font-light h-full  text-fg-pf">
       <Helmet
@@ -26,6 +31,7 @@ const IndexPage = (props: PageProps) => {
         defer={false}
         link={[{ rel: "icon", type: "image/png", href: favicon }]}
       />
+      
       <Particles
         className="h-full fixed inset-0"
         params={{
@@ -82,7 +88,7 @@ const IndexPage = (props: PageProps) => {
             </a>
           </div>
           <div className="pt-6">
-            <a
+            <a 
               href="mailto:aimen_hamza@hotmail.com"
               className="text-cl-contact text-2xl hover:text-cl-linkedin cursor-pointer"
             >
@@ -164,7 +170,7 @@ const IndexPage = (props: PageProps) => {
             title={"Delivery food Mobile App"}
             logo={"https://img.icons8.com/ios/50/ffffff/react-native--v1.png"}
             disc={
-              "This is my first cross platform production level mobile app using React Native.the app is shop/delivry handeling customer orders and delivery application ."
+              "This is my first cross platform production level mobile app using React Native.the app is shop/delivry handeling customer orders and delivery workers ."
             }
             tech={{
               item1: "Expo",
@@ -187,15 +193,16 @@ const IndexPage = (props: PageProps) => {
               item3: "Composables",
             }}
           />
-        </div>
+         </div>
           <p className="flex justify-center font-semibold">
           Made with &nbsp;
           <img src="https://img.icons8.com/material-outlined/24/ffffff/filled-like.png" alt="love" height={24} width={24}/>
           &nbsp;
            by &nbsp; <a className="hover:text-yellow-300" href="https://www.aymenhamza.com/">Aymen Hamza</a>
         </p>
-        <div className="h-10"></div>
+        <div className="h-10"></div> 
       </div>
+       
     
     </main>
   );
