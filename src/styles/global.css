@@ -3,6 +3,29 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 9px;
+  height: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #edf2f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #101010;
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #101010;
+}
+
 html,
 body {
   width: 100%;
@@ -12,5 +35,4 @@ body {
   font-family: "Inter";
   padding: 0;
   overflow-x: hidden;
-  overflow-y: hidden;
 }

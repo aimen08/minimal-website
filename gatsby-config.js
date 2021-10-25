@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Inter\:300,800`],
+        fonts: [`Inter\:300,600,800`],
       },
     },
   ],
