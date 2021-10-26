@@ -10,12 +10,20 @@ export default function CardItem(props) {
          text-white overflow-hidden bg-bg-pf
           rounded-lg shadow-lg dark:bg-gray-800"
       >
-        <img
-          className="object-cover       
+        <button
+          className="w-80"
+          onClick={() => {
+            props.setImage(props.img);
+            props.setIsOpen(true);
+          }}
+        >
+          <img
+            className="object-cover       
           object-center w-full h-48"
-          src={props.img}
-          alt="avatar"
-        />
+            src={props.img}
+            alt="avatar"
+          />
+        </button>
 
         <div className="flex items-center px-6 py-2 bg-gray-900">
           <img src={props.logo} width={30} alt="csharp" />
