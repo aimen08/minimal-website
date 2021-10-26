@@ -1,4 +1,5 @@
 import React from "react";
+import { ZoomableImage } from "react-rainbow-components";
 
 export default function CardItem(props) {
   return (
@@ -10,20 +11,7 @@ export default function CardItem(props) {
          text-white overflow-hidden bg-bg-pf
           rounded-lg shadow-lg dark:bg-gray-800"
       >
-        <button
-          className="w-80"
-          onClick={() => {
-            props.setImage(props.img);
-            props.setIsOpen(true);
-          }}
-        >
-          <img
-            className="object-cover       
-          object-center w-full h-48"
-            src={props.img}
-            alt="avatar"
-          />
-        </button>
+        <ZoomableImage src={props.img} className="object-cover w-full h-48" />
 
         <div className="flex items-center px-6 py-2 bg-gray-900">
           <img src={props.logo} width={30} alt="csharp" />

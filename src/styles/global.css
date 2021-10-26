@@ -36,3 +36,8 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
+.kpvnla {
+  background-color: gray;
+  opacity: 0.5;
+}

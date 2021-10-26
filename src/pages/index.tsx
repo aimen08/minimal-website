@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import { Page, PageProps } from "gatsby";
 //@ts-ignore
 import logo from "../images/logo.png";
@@ -16,14 +16,12 @@ import forth from "../images/4.png";
 import fifth from "../images/5.png";
 import sixth from "../images/6.png";
 
-import MyModal from "../components/MyModal";
 
 
 // styles
 // markup
 const IndexPage = (props: PageProps) => {
-  const [isOpen,setIsOpen] = useState(false);
-  const [image,setImage] = useState(null);
+
 
   return (
     <main className="font-light h-full  text-fg-pf">
@@ -57,11 +55,6 @@ const IndexPage = (props: PageProps) => {
       />
 
       <div className="max-w-screen-xl mx-auto mt-52 pt-24 pb-0 px-8 animate-fade-in-up absolute inset-0">
-         <MyModal
-          isOpen={isOpen}
-          setIsOpen={setIsOpen}
-          img={image}
-        />
         <img src={logo} height={126} width={400} alt="Logo" />
         <div className="pt-16 pb-4">
           <h1 className=" text-fg-pf text-4xl font-extrabold ">
@@ -106,8 +99,7 @@ const IndexPage = (props: PageProps) => {
         <h1 className="text-center mt-36 text-4xl font-semibold">My Work</h1>
         <div className="my-10  flex flex-wrap   justify-center	 mb-32">
           <CardItem
-            setImage={setImage}
-            setIsOpen={setIsOpen}
+           
             img={first}
             tag={".Net/C#"}
             title={"Doctor Management System"}
@@ -125,8 +117,7 @@ const IndexPage = (props: PageProps) => {
           />
 
           <CardItem
-          setImage={setImage}
-            setIsOpen={setIsOpen}
+          
             img={second}
             tag={".Net/C#"}
             title={"Queue Management System"}
@@ -144,8 +135,7 @@ const IndexPage = (props: PageProps) => {
           />
 
           <CardItem
-          setImage={setImage}
-            setIsOpen={setIsOpen}
+      
             img={third}
             tag={"Android/Java"}
             title={"Library Mobile App"}
@@ -162,8 +152,7 @@ const IndexPage = (props: PageProps) => {
             }}
           />
           <CardItem
-          setImage={setImage}
-            setIsOpen={setIsOpen}
+    
             img={forth}
             tag={"Android/Java"}
             title={"Supermarket Mobile app"}
@@ -180,8 +169,7 @@ const IndexPage = (props: PageProps) => {
             }}
           />
           <CardItem
-          setImage={setImage}
-            setIsOpen={setIsOpen}
+
             img={fifth}
             tag={"React Native/JS"}
             title={"Delivery food Mobile App"}
@@ -197,8 +185,7 @@ const IndexPage = (props: PageProps) => {
           />
 
           <CardItem
-          setImage={setImage}
-            setIsOpen={setIsOpen}
+  
             img={sixth}
             tag={"Android/Kotlin"}
             title={"Fashion Store Mobile App"}
