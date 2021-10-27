@@ -130,9 +130,9 @@ const IndexPage = (props: PageProps) => {
             <br />
             Also i do <span className="text-indigo-500">.Net/C#</span> desktop
             Apps development. <br />
-            Latly am Doing{" "}
+            lately i'm doing{" "}
             <span className="text-yellow-300">JavaScript/TypeScript</span> React
-            related projects Using Gatsby SSG.
+            related projects using Gatsby SSG.
           </p>
           <div className="pt-5 flex space-x-5 flex-row">
             <a href="https://github.com/aimen08">
