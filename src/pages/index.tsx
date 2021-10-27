@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Page, PageProps } from "gatsby";
 //@ts-ignore
 import logo from "../images/logo.png";
@@ -15,13 +15,14 @@ import third from "../images/3.png";
 import forth from "../images/4.png";
 import fifth from "../images/5.png";
 import sixth from "../images/6.png";
+import cv from "../content/cv.pdf"
 
 
 
 // styles
 // markup
 const IndexPage = (props: PageProps) => {
-
+  const [page,setPage] = useState(false);
 
   return (
     <main className="font-light h-full  text-fg-pf">
@@ -30,7 +31,9 @@ const IndexPage = (props: PageProps) => {
         defer={false}
         link={[{ rel: "icon", type: "image/png", href: favicon }]}
       />
-      
+    
+
+
 
       <Particles
         className="h-full fixed inset-0"
@@ -54,7 +57,59 @@ const IndexPage = (props: PageProps) => {
         }}
       />
 
-      <div className="max-w-screen-xl mx-auto mt-52 pt-24 pb-0 px-8 animate-fade-in-up absolute inset-0">
+     <div className="navbar mb-2 shadow-lg  text-neutral-content rounded-3xl z-10 absolute top-2 right-4 left-4 bg-bg-pf border-2 border-opacity-20 opacity-90">
+  <div className="px-2 mx-2 navbar-start">
+    <span className="text-lg font-bold">
+            Aymen Hamza
+          </span>
+  </div> 
+  <div className="hidden px-2 mx-2 navbar-center lg:flex">
+    <div className="flex items-stretch">
+      <a className="btn btn-ghost btn-sm rounded-btn" onClick={()=>setPage(false)}>
+              Home
+            </a> 
+      <a className="btn btn-ghost btn-sm rounded-btn" onClick={()=>setPage(true)}>
+              Portfolio
+            </a> 
+      <a href={cv} className="btn btn-ghost btn-sm rounded-btn">
+              Resume
+            </a> 
+    </div>
+  </div> 
+  <div className="navbar-end">
+<div className="dropdown dropdown-end">
+  <button tabIndex="0" className="btn btn-square btn-ghost lg:hidden">
+    <img src="https://img.icons8.com/material-rounded/24/ffffff/menu--v1.png"/>
+    </button> 
+  <ul tabindex="0" className="p-2 shadow menu dropdown-content  rounded-box w-52 bg-bg-pf border-2">
+    <li>
+      <a className="btn btn-ghost  btn-sm rounded-btn " onClick={()=>setPage(false)}>
+              Home
+            </a> 
+    </li> 
+    <li>
+      <a className="btn btn-ghost btn-sm rounded-btn" onClick={()=>setPage(true)}>
+              Portfolio
+            </a> 
+    </li> 
+    <li>
+        <a href={cv} className="btn btn-ghost btn-sm rounded-btn">
+              Resume
+            </a> 
+    </li>
+  </ul>
+</div>
+
+    
+  </div>
+</div>
+   
+
+      <div className="max-w-screen-xl mx-auto mt-32 pt-24 pb-0 px-8 absolute inset-0">
+        
+        {/* First Page */}
+        {!page &&
+          <div className="animate-fade-in-up">
         <img src={logo} height={126} width={400} alt="Logo" />
         <div className="pt-16 pb-4">
           <h1 className=" text-fg-pf text-4xl font-extrabold ">
@@ -96,8 +151,15 @@ const IndexPage = (props: PageProps) => {
             </a>
           </div>
         </div>
-        <h1 className="text-center mt-36 text-4xl font-semibold">My Work</h1>
-        <div className="my-10  flex flex-wrap   justify-center	 mb-32">
+        </div>}
+
+        {/* Second Page  */}
+       
+         
+        {/* <h1 className="text-center mt-36 text-4xl font-semibold">My Work</h1> */}
+          {page &&
+          
+        <div className=" animate-fade-in-up  flex flex-wrap   justify-center	 mb-32">
           <CardItem
            
             img={first}
@@ -184,6 +246,7 @@ const IndexPage = (props: PageProps) => {
             }}
           />
 
+
           <CardItem
   
             img={sixth}
@@ -200,13 +263,18 @@ const IndexPage = (props: PageProps) => {
             }}
           />
          </div>
-          <p className="flex justify-center font-semibold">
+        }
+
+
+
+
+          {/* <p className="flex justify-center font-semibold">
           Made with &nbsp;
           <img src="https://img.icons8.com/material-outlined/24/ffffff/filled-like.png" alt="love" height={24} width={24}/>
           &nbsp;
            by &nbsp; <a className="hover:text-yellow-300" href="https://www.aymenhamza.com/">Aymen Hamza</a>
         </p>
-        <div className="h-10"></div> 
+        <div className="h-1"></div>  */}
       </div>
        
     

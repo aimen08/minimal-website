@@ -30,4 +30,12 @@ module.exports = {
   variants: {
     extend: {},
   },
+  plugins: [require("daisyui")],
+  daisyui: {
+    styled: true,
+    base: false,
+    themes: [
+      "CMYK", // first one will be the default theme
+    ],
+  },
 };
