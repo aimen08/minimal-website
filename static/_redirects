@@ -1,5 +1,1 @@
-[[redirects]]
-  from = "/studio"
-  to = "https://studio.aymenhamza.com"
-  status = 200
-  force = true # COMMENT: ensure that we always redirect
+/studio https://studio.aymenhamaza.com 301
