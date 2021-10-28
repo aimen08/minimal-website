@@ -5,6 +5,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-postcss",
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-fonts`,
