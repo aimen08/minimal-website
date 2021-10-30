@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Page, PageProps, graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import {graphql } from "gatsby";
+
 //@ts-ignore
 import logo from "../images/logo.png";
 //@ts-ignore
@@ -10,12 +10,7 @@ import { Helmet } from "react-helmet";
 import Particles from "react-particles-js";
 import CardItem from "../components/CardItem";
 
-import first from "../images/1.png";
-import second from "../images/2.png";
-import third from "../images/3.png";
-import forth from "../images/4.png";
-import fifth from "../images/5.png";
-import sixth from "../images/6.png";
+
 import cv from "../content/cv.pdf";
 
 // styles
