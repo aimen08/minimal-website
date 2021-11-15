@@ -11,7 +11,7 @@ import Particles from "react-particles-js";
 import CardItem from "../components/CardItem";
 
 
-import cv from "../content/cv.pdf";
+import cv from "../content/cv_aymen.pdf";
 
 // styles
 // markup
