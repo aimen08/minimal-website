@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 //@ts-ignore
 import logo from "../images/logo.png";
@@ -9,7 +9,6 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { Helmet } from "react-helmet";
 import Particles from "react-particles-js";
 import CardItem from "../components/CardItem";
-
 
 import cv from "../content/cv_aymen.pdf";
 
@@ -115,29 +114,22 @@ const IndexPage = ({ data }) => {
             <img src={logo} height={126} width={400} alt="Logo" />
             <div className="pt-16 pb-4">
               <h1 className=" text-fg-pf text-4xl font-extrabold ">
-                I’m Aymen Hamza,a Software engineer .
+                I’m Aymen Hamza,a Software engineer
               </h1>
               <p className="pt-9 text-2xl">
-                Currently I am the Co-founder of software company{" "}
-                <span className="text-cl-contact hover:text-cl-linkedin">
-                  ElFather
-                </span>
-                .
+                I Build mobile and web applications for audiences around the
+                world.
               </p>
 
               <p className="pt-9 text-2xl">
-                I work mainly on mobile app developemnt using different
-                technologies such as{" "}
-                <span className="text-cl-github">React Native </span> , JetPack
-                Compose...ect.
-                <br />
-                Also i do <span className="text-indigo-500">.Net/C#</span>{" "}
-                desktop Apps development. <br />
-                lately i'm doing{" "}
-                <span className="text-yellow-300">
-                  JavaScript/TypeScript
-                </span>{" "}
-                React related projects using Gatsby SSG.
+                Experienced mobile app developer who has a track record of
+                success <br></br>creating apps that are both well-received and
+                commercially viable.<br></br> Skilled with working as a team and
+                incorporating input into projects.<br></br> Ability to always
+                look for ways to improve upon an already existing <br></br> app
+                to keep people downloading it and enjoying it . <br></br> Strong
+                eye for detail and tenacity to never quit on something<br></br>{" "}
+                until it is absolutely perfect.
               </p>
               <div className="pt-5 flex space-x-5 flex-row">
                 <a href="https://github.com/aimen08">
